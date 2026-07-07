@@ -198,12 +198,12 @@ nav a,
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 .universe-grid img {
-  height: min(58vh, 560px);
-  min-height: 330px;
+  height: 520px;
+  width: 100%;
   object-fit: cover;
   background: #FAF8F5;
 }
