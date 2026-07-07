@@ -412,3 +412,73 @@ nav a,
     padding: 36px 18px 46px;
   }
 }
+
+.ending-screen {
+  min-height: 100vh;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 96px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAF8F5;
+  color: #111;
+  border-top: 1px solid rgba(0,0,0,.08);
+  scroll-snap-align: start;
+}
+
+.ending-inner {
+  width: 100%;
+  max-width: 980px;
+  text-align: center;
+}
+
+.ending-brand {
+  font-size: clamp(54px, 9vw, 128px);
+  line-height: 0.9;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  margin-bottom: 34px;
+}
+
+.ending-line {
+  margin: 0 0 36px;
+  font-size: clamp(18px, 2.4vw, 34px);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.ending-mail {
+  display: inline-block;
+  margin-bottom: 52px;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.ending-social {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  margin-bottom: 38px;
+}
+
+.ending-social a {
+  color: #111;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.ending-copy {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  opacity: 0.45;
+}
