@@ -20,19 +20,31 @@
 
   <main>
     <section id="hero" class="screen hero">
-      <video class="hero-video active" autoplay muted loop playsinline poster="assets/hero-02.jpg">
-        <source src="assets/Hero-Video.mp4" type="video/mp4" />
-      </video>
-     <img class="hero-video" src="assets/hero-02.jpg?v=2" alt="VAPAW POP 12000">
-      <img class="hero-video" src="assets/hero-03.jpg" alt="VAPAW KANZ 25000">
-      <button class="hero-arrow left" aria-label="Previous video">‹</button>
-      <button class="hero-arrow right" aria-label="Next video">›</button>
+  <div class="hero-slide active">
+    <video autoplay muted loop playsinline poster="assets/hero-02.jpg">
+      <source src="assets/Hero-Video.mp4" type="video/mp4" />
+    </video>
+  </div>
 
-      <div class="hero-dots" aria-label="Hero video navigation">
-        <button class="dot active" aria-label="Video 1"></button>
-        <button class="dot" aria-label="Video 2"></button>
-        <button class="dot" aria-label="Video 3"></button>
-      </div>
+  <picture class="hero-slide">
+    <source media="(max-width: 980px)" srcset="assets/hero-mobile-02.jpg">
+    <img src="assets/hero-02.jpg?v=2" alt="VAPAW POP 12000">
+  </picture>
+
+  <picture class="hero-slide">
+    <source media="(max-width: 980px)" srcset="assets/hero-mobile-03.jpg">
+    <img src="assets/hero-03.jpg?v=2" alt="VAPAW KANZ 25000">
+  </picture>
+
+  <button class="hero-arrow left" aria-label="Previous slide">‹</button>
+  <button class="hero-arrow right" aria-label="Next slide">›</button>
+
+  <div class="hero-dots" aria-label="Hero navigation">
+    <button class="dot active" aria-label="Slide 1"></button>
+    <button class="dot" aria-label="Slide 2"></button>
+    <button class="dot" aria-label="Slide 3"></button>
+  </div>
+</section>
 
    
     </section>
